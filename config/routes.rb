@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :school_classes, only: [:new, :create, :edit, :update]
+  resources :school_classes
   resources :school, only: [:new, :create, :edit, :update, :show, :index]
   resources :students
   get '/school_classes/:id', to: 'school_class#show'
